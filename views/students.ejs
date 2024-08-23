@@ -1,0 +1,18 @@
+<!-- views/students.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <ul>
+        <% students.forEach(function(student, index) { %>
+            <li><strong><%= index + 1 %>. Name:</strong> <%= student.name %>, <strong>Age:</strong> <%= student.age %>, <strong>Course:</strong> <%= student.course %></li>
+        <% }) %>
+    </ul>
+    <a href="/">Add Another Student</a>
+</body>
+</html>
